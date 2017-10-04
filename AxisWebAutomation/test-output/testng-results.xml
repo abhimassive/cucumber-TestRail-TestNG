@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1759" started-at="2017-10-04T00:51:58Z" finished-at="2017-10-04T00:52:00Z">
+  <suite name="Default suite" duration-ms="7932" started-at="2017-10-04T03:55:47Z" finished-at="2017-10-04T03:55:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1759" started-at="2017-10-04T00:51:58Z" finished-at="2017-10-04T00:52:00Z">
-      <class name="testrailtests.TestRailTests">
-        <test-method status="PASS" signature="testAPI()[pri:10, instance:testrailtests.TestRailTests@604ed9f0]" name="testAPI" duration-ms="1735" started-at="2017-10-04T11:51:58Z" finished-at="2017-10-04T11:52:00Z">
+    <test name="Default test" duration-ms="7932" started-at="2017-10-04T03:55:47Z" finished-at="2017-10-04T03:55:55Z">
+      <class name="axisweb.massive.login.TC001_VerifyLoginWith_InvalidCredentials">
+        <test-method status="PASS" signature="setup()[pri:0, instance:axisweb.massive.login.TC001_VerifyLoginWith_InvalidCredentials@4dfa3a9d]" name="setup" is-config="true" duration-ms="5694" started-at="2017-10-04T14:55:47Z" finished-at="2017-10-04T14:55:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testAPI()[pri:10, instance:axisweb.massive.login.TC001_VerifyLoginWith_InvalidCredentials@4dfa3a9d]" name="testAPI" duration-ms="1372" started-at="2017-10-04T14:55:52Z" finished-at="2017-10-04T14:55:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAPI -->
-        <test-method status="PASS" signature="passTest()[pri:20, instance:testrailtests.TestRailTests@604ed9f0]" name="passTest" duration-ms="3" started-at="2017-10-04T11:52:00Z" finished-at="2017-10-04T11:52:00Z">
+        <test-method status="PASS" signature="verifyLoginWithInvalidCredentials()[pri:20, instance:axisweb.massive.login.TC001_VerifyLoginWith_InvalidCredentials@4dfa3a9d]" name="verifyLoginWithInvalidCredentials" duration-ms="608" started-at="2017-10-04T14:55:54Z" finished-at="2017-10-04T14:55:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- passTest -->
-      </class> <!-- testrailtests.TestRailTests -->
+        </test-method> <!-- verifyLoginWithInvalidCredentials -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:axisweb.massive.login.TC001_VerifyLoginWith_InvalidCredentials@4dfa3a9d]" name="endTest" is-config="true" duration-ms="239" started-at="2017-10-04T14:55:54Z" finished-at="2017-10-04T14:55:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- axisweb.massive.login.TC001_VerifyLoginWith_InvalidCredentials -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
