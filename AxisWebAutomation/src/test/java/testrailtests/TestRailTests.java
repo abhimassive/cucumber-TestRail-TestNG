@@ -1,10 +1,12 @@
 package testrailtests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import testrail.TestRail;
 import testrail.TestRailAPI;
 
+@Listeners(listeners.TestListener.class)
 public class TestRailTests
 {
     @Test (priority = 10)
@@ -17,7 +19,7 @@ public class TestRailTests
     }
 
     @Test (priority = 20)
-    @TestRail(testCaseId = {595545})
+    @TestRail(testCaseId = {4360221})
     public void passTest()
     {
         Assert.assertTrue(true);

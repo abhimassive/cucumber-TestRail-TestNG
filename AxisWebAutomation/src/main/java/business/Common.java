@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.containsString;
 public class Common
 {
     // set to true to record test results to TestRail
-   public static Boolean postResultsToTestRail = false;
+   public static Boolean postResultsToTestRail = true;
     public static Boolean debugInfo = true;
 
     public static String dateTimeString()
