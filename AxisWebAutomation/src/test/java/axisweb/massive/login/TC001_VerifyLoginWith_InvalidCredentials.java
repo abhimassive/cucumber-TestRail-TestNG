@@ -3,11 +3,15 @@ package axisweb.massive.login;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import axisweb.automation.testbase.TestBase;
 import axisweb.automation.uiActions.HomePage;
+import testrail.TestRail;
+import testrail.TestRailAPI;
 
+@Listeners(listeners.TestListener.class)
 public class TC001_VerifyLoginWith_InvalidCredentials extends TestBase {
 
 	HomePage homepage;
@@ -16,8 +20,18 @@ public class TC001_VerifyLoginWith_InvalidCredentials extends TestBase {
 	public void setup() {
 		init();
 	}
+	
+	@Test (priority = 10)
+    public void testAPI() throws Exception
+    {
+        TestRailAPI api = new TestRailAPI();
+        @SuppressWarnings("static-access")
+		String testRailCase = api.getCase(595545).toString();
+        System.out.println("typing here......." + testRailCase);
+    }
 
-	@Test
+	@Test (priority = 20)
+	@TestRail(testCaseId = {595545})
 	public void verifyLoginWithInvalidCredentials() {
 		
 		homepage = new HomePage(driver);

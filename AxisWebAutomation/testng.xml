@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="axisweb.massive.login.TC001_VerifyLoginWith_InvalidCredentials"/>
-      <class name="axisweb.massive.login.TC002_VerifyLoginWith_ValidCredentials"/>
+ <!--      <class name="axisweb.massive.login.TC001_VerifyLoginWith_InvalidCredentials"/>
+ --> 
+      <class name="testrailtests.TestRailTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
