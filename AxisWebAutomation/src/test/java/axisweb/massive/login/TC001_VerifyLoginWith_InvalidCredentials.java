@@ -1,6 +1,6 @@
 package axisweb.massive.login;
 
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
@@ -20,24 +20,23 @@ public class TC001_VerifyLoginWith_InvalidCredentials extends TestBase {
 	public void setup() {
 		init();
 	}
-	
-	@Test (priority = 10)
-    public void testAPI() throws Exception
-    {
-        TestRailAPI api = new TestRailAPI();
-        @SuppressWarnings("static-access")
-		String testRailCase = api.getCase(595545).toString();
-        System.out.println("typing here......." + testRailCase);
-    }
 
-	@Test (priority = 20)
-	@TestRail(testCaseId = {595545})
+	@Test(priority = 10)
+	public void testAPI() throws Exception {
+		TestRailAPI api = new TestRailAPI();
+		@SuppressWarnings("static-access")
+		String testRailCase = api.getCase(595545).toString();
+		System.out.println("TestCase Details JSON : " + testRailCase);
+	}
+
+	@Test(priority = 20)
+	@TestRail(testCaseId = { 595545 })
 	public void verifyLoginWithInvalidCredentials() {
-		
+
 		homepage = new HomePage(driver);
 
 		homepage.loginToWebApp("wrong_email@invalidcompany.co", "wrong_password");
-		AssertJUnit.assertEquals(homepage.getLoginErrorMsg(),
+		Assert.assertEquals(homepage.getLoginErrorMsg(),
 				"Looks like your email or password is incorrect. Please try again.");
 	}
 
