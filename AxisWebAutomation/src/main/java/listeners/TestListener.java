@@ -67,6 +67,8 @@ public class TestListener implements ITestListener {
 
 			// if the Test Case Id and Test Run Id have both been set then try to add the
 			// test result to TestRail
+			System.out.println("testCaseIds  "+testCaseIds);
+			System.out.println("testRailTestRunId  " + testRailTestRunId);
 			if (testCaseIds != null && testRailTestRunId != 0) {
 				// the comment that will be added to the Test Run result
 				Object commentFromTest = result.getTestContext().getAttribute("Comment");
