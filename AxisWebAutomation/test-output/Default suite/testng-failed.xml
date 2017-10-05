@@ -5,7 +5,7 @@
     <classes>
       <class name="testrailtests.TestRailTests">
         <methods>
-          <include name="testAPI"/>
+          <include name="failTest"/>
         </methods>
       </class> <!-- testrailtests.TestRailTests -->
     </classes>
