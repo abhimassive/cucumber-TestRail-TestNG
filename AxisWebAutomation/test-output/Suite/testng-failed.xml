@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
-    <parameter name="testRailTestRunId" value="7740"/>
+    <parameter name="testRailTestRunId" value="7743"/>
     <classes>
       <class name="testrailtests.TestRailTests">
         <methods>

@@ -31,9 +31,8 @@ public class TestRailAPI {
 		@SuppressWarnings("rawtypes")
 		Map data = new HashMap();
 		data.put("status_id", new Integer(p_statusId));
-		//data.put("status_id", 2);
 		data.put("comment", p_comment);
-		data.put("custom_device", "Firefox");
+		data.put("custom_device", "iphone");
 		data.put("custom_mandaroty_version", "1");
 		data.put("custom_environment", "1");
 
