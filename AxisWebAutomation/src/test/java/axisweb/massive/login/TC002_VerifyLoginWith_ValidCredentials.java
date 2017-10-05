@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import axisweb.automation.testbase.TestBase;
 import axisweb.automation.uiActions.HomePage;
+import testrail.TestRail;
 
 public class TC002_VerifyLoginWith_ValidCredentials extends TestBase {
 
@@ -18,6 +19,7 @@ public class TC002_VerifyLoginWith_ValidCredentials extends TestBase {
 	}
 
 	@Test
+	@TestRail(testCaseId = 595545)
 	public void verifyLoginWith_ValidCredentials() {
 
 		homepage = new HomePage(driver);
