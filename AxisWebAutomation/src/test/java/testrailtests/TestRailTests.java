@@ -19,14 +19,14 @@ public class TestRailTests
     }
 
     @Test (priority = 20)
-    @TestRail(testCaseId = {4360221})
+    @TestRail(testCaseId = {602617})
     public void passTest()
     {
         Assert.assertTrue(true);
     }
 
-    @Test(enabled = false)
-    @TestRail(testCaseId = {8616})
+    @Test(enabled = true)
+    @TestRail(testCaseId = {595545})
     public void failTest()
     {
         Assert.assertTrue(false);
