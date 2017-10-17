@@ -5,4 +5,6 @@ When I hover my mouse over MOVIES link
 Then A drop down frame appears containing option A-Z
 And I click on the A-Z option
 Then Movies are sorted alphabetically from A-Z
+
 And I am on the Master branch
+
