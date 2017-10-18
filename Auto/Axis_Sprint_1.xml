@@ -16,7 +16,8 @@
         <parameter name="password" value="password"/>
 
         <classes>
-            <class name="steps.Login"/>
+           <!-- <class name="steps.Login"/>   -->
+            <class name="steps.MoviesAZ"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
