@@ -31,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    public WebDriver driver;
+    public static WebDriver driver; //******DON'T REMOVE "static" KEYWORD FROM WEBDRIVER******* 17-OCT-2017
     public String nodeURL;
     //TestListener lis;
 

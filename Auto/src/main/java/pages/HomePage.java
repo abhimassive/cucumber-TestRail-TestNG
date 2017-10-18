@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import testbase.TestBase;
@@ -25,6 +26,13 @@ public class HomePage extends TestBase {
     public WebElement login_error_msg;
     @FindBy(xpath = "//div[@class='profile-circle__letter uppercase']")
     public WebElement profiles_circle;
+
+    @FindBy(xpath = "(//a[@class='primary-nav__entry-link' and text()='Movies'])[1]")
+    public WebElement MOVIES;
+
+    @FindBy(xpath = "//div[@class='drop-menu']")
+    WebElement drop_menu;
+
     WebDriver driver;
 
     public HomePage(WebDriver driver) {
@@ -65,6 +73,32 @@ public class HomePage extends TestBase {
         return login_error_msg.getText();
 
 
+    }
+
+    public void moviesMouseHover() throws InterruptedException {
+        Actions action = new Actions(driver);
+        action.moveToElement(MOVIES).build().perform();
+        Thread.sleep(2000);
+
+    }
+
+    public WebElement moviesDropDown() {
+
+        List<WebElement> drop_down = drop_menu.findElements(By.xpath(".//*"));
+
+        return drop_menu;
+
+    }
+
+    public void clickOnAZ() {
+        List<WebElement> drop_down = drop_menu.findElements(By.xpath(".//*"));
+        for (int i = 0; i < drop_down.size(); i++) {
+            if (drop_down.get(i).getText().equalsIgnoreCase("A-Z")) {
+                driver.findElement(By.partialLinkText("A-Z")).click();
+                break;
+            }
+        }
+        System.out.println("Movies Page Title =  " + driver.getTitle());
     }
 }
 
