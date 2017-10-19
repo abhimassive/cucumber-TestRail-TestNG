@@ -10,10 +10,7 @@
         <parameter name="browserName" value="firefox"/>
         <parameter name="expectedLoginErrorMessage"
                    value="Looks like your email or password is incorrect. Please try again."/>
-        <!-- <parameter name="email" value="abhijeet.daspatnaik@massive.co"/>
-        <parameter name="password" value="ABHI@dp11"/>-->
-        <parameter name="email" value="4profiles@profile.com"/>
-        <parameter name="password" value="password"/>
+       
 
         <classes>
             <!-- <class name="steps.Login"/>
