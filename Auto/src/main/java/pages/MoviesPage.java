@@ -14,6 +14,17 @@ public class MoviesPage extends TestBase {
 
     @FindBy(xpath = "//div[@class = 'packshot__image packshot__image--poster']")
     WebElement movie_posters;
+
+
+    @FindBy(xpath = ".//span[text()='Bookmark']")
+    WebElement bookmark;
+
+    @FindBy(xpath = ".//span[text()='Bookmarked']")
+    WebElement bookmarked;
+
+    @FindBy(xpath = ".//span[text()='Remove Bookmark']")
+    WebElement remove_bookmark;
+
     WebDriver driver;
 
     public MoviesPage(WebDriver driver) {
@@ -26,7 +37,6 @@ public class MoviesPage extends TestBase {
                 .executeScript("window.scrollTo(0, document.body.scrollHeight)");
         Thread.sleep(5000);
 
-        int j = 0;
         System.out.println("Movie Names Sorted A-Z");
         System.out.println("-----------------------------------------------");
 
@@ -35,7 +45,11 @@ public class MoviesPage extends TestBase {
             System.out.println(movie_title.get(i).getAttribute("title"));
         }
 
+    }
 
+
+    public void setBookmark() {
+        bookmark.click();
     }
 }
 

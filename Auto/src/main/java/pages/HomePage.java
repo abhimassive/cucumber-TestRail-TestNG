@@ -14,16 +14,22 @@ public class HomePage extends TestBase {
 
     @FindBy(linkText = "Sign In")
     public WebElement signIn;
+
     @FindBy(id = "email")
     public WebElement login_email;
+
     @FindBy(id = "password")
     public WebElement login_password;
+
     @FindBy(xpath = "//button[@class='account-btn__input account-btn__input--primary sign-in-form__sign-in']")
     public WebElement login_button;
+
     @FindBy(css = ".profile-icon__initial.uppercase")
     public WebElement profile_icon;
+
     @FindBy(css = ".sign-in-form__error")
     public WebElement login_error_msg;
+
     @FindBy(xpath = "//div[@class='profile-circle__letter uppercase']")
     public WebElement profiles_circle;
 
@@ -32,6 +38,10 @@ public class HomePage extends TestBase {
 
     @FindBy(xpath = "//div[@class='drop-menu']")
     WebElement drop_menu;
+
+    @FindBy(xpath = "//div[@class='h1-hero']")
+    WebElement header_swipe;
+
 
     WebDriver driver;
 
@@ -100,6 +110,13 @@ public class HomePage extends TestBase {
         }
         System.out.println("Movies Page Title =  " + driver.getTitle());
     }
+
+    public void clickOnHeaderSwipe() {
+        header_swipe.click();
+    }
+
+
+
 }
 
 
