@@ -30,7 +30,6 @@ public class MoviesAZ extends TestBase {
     @Test(priority = 10)
     @Given("^I am on the AXIS RWA HOMEpage$")
     public void Step_10_iAmOnAxisRWAHomepage() {
-        System.out.println("I am on the AXIS RWA HOMEpage");
         driver.get("https://qa2.massiveaxis.com/");
     }
 
