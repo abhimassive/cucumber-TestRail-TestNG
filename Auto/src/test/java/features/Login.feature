@@ -14,5 +14,4 @@ Feature: Login
 
     Examples:
       | email                          | password  |
-      | abhijeet.daspatnaik@massive.co | ABHI@dp11 |
-      | 4profiles@profile.com          | password  |
+      |   |
