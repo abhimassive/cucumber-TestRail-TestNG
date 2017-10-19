@@ -32,7 +32,7 @@ public class Login extends TestBase {
     @Test(priority = 10)
     @Given("^I navigate to Axis RWA$")
     public void Step_10_iNavigateToAxisWeb() {
-        driver.get("https://qa2.massiveaxis.com/");
+        driver.get("https");
     }
 
     @Test(priority = 20)//, enabled = false)
