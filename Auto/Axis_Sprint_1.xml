@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+    <test name="Login">
+
+        <parameter name="testRailTestRunId" value="7743"/>
+        <parameter name="browserName" value="firefox"/>
+        <parameter name="expectedLoginErrorMessage"
+                   value="Looks like your email or password is incorrect. Please try again."/>
+        <!-- <parameter name="email" value="abhijeet.daspatnaik@massive.co"/>
+        <parameter name="password" value="ABHI@dp11"/>-->
+        <parameter name="email" value="4profiles@profile.com"/>
+        <parameter name="password" value="password"/>
+
+        <classes>
+            <class name="steps.Login"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
